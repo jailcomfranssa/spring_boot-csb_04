@@ -14,4 +14,25 @@ INSERT INTO tb_user_role (user_id, role_id) VALUES (3, 1);
 INSERT INTO tb_user_role (user_id, role_id) VALUES (3, 2);
 INSERT INTO tb_user_role (user_id, role_id) VALUES (3, 3);
 
-SELECT * FROM TB_ROLE;
+INSERT INTO tb_course (name, img_Uri, img_Gray_Uri) values ( 'BootCamp HTML','NULL','NULL');
+
+INSERT INTO tb_offer(edition,start_Moment,end_Moment, course_id) values ( '1.0','2020-07-14T10:00:00','2021-07-14T10:00:00',1 );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
