@@ -20,6 +20,10 @@ INSERT INTO tb_offer(edition,start_Moment,end_Moment, course_id) values ( '1.0',
 
 INSERT INTO tb_notification(texto,moment,read,route,user_id) values ( 'Obrigo(a) pelo curso','2020-07-14T10:00:00', true,'http://www.escola.com.br', 1);
 
+INSERT INTO tb_resource(title,description,position,img_Uri,type,extemal_Link,offer_id) values ( 'Trilha HTML','Trilha principal do curso',1,'NULL',1,'NULL',1);
+INSERT INTO tb_resource(title,description,position,img_Uri,type,extemal_Link,offer_id) values ( 'Forum','Tire suas duvidas',2,'NULL',2,'NULL',1);
+INSERT INTO tb_resource(title,description,position,img_Uri,type,extemal_Link,offer_id) values ( 'Lives','Lives Escrusivas para as Turmas',3,'NULL',0,'NULL',1);
+
 
 
 
