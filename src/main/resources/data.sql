@@ -24,6 +24,9 @@ INSERT INTO tb_resource(title,description,position,img_Uri,type,extemal_Link,off
 INSERT INTO tb_resource(title,description,position,img_Uri,type,extemal_Link,offer_id) values ( 'Forum','Tire suas duvidas',2,'NULL',2,'NULL',1);
 INSERT INTO tb_resource(title,description,position,img_Uri,type,extemal_Link,offer_id) values ( 'Lives','Lives Escrusivas para as Turmas',3,'NULL',0,'NULL',1);
 
+INSERT INTO tb_section(title,description,position,img_Uri,resource_id,prerequite_id)values ('Capitulo 01','Nesse capitulo vamos começar',1,'NULL.img',1,null );
+INSERT INTO tb_section(title,description,position,img_Uri,resource_id,prerequite_id)values ('Capitulo 01','Nesse capitulo vamos começar',2,'NULL.img',1,1 );
+INSERT INTO tb_section(title,description,position,img_Uri,resource_id,prerequite_id)values ('Capitulo 01','Nesse capitulo vamos começar',3,'NULL.img',1,2 );
 
 
 
