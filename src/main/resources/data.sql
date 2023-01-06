@@ -28,6 +28,8 @@ INSERT INTO tb_section(title,description,position,img_Uri,resource_id,prerequite
 INSERT INTO tb_section(title,description,position,img_Uri,resource_id,prerequite_id)values ('Capitulo 01','Nesse capitulo vamos começar',2,'NULL.img',1,1 );
 INSERT INTO tb_section(title,description,position,img_Uri,resource_id,prerequite_id)values ('Capitulo 01','Nesse capitulo vamos começar',3,'NULL.img',1,2 );
 
+INSERT INTO tb_enrollment(user_id,offer_id,enroll_Moment,refund_Moment,available,only_Update) values ( 1,1, '2020-07-14T10:00:00', null, true, false );
+INSERT INTO tb_enrollment(user_id,offer_id,enroll_Moment,refund_Moment,available,only_Update) values ( 2,1, '2020-07-14T10:00:00', null, true, false );
 
 
 
