@@ -1,5 +1,6 @@
 package com.devsuperior.dslearnbds.service.impl;
 
+import com.devsuperior.dslearnbds.exceptions.ResourceNotFoundException;
 import com.devsuperior.dslearnbds.model.dto.UserDto;
 import com.devsuperior.dslearnbds.model.entity.User;
 import com.devsuperior.dslearnbds.repository.UserRepository;
@@ -12,6 +13,7 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
@@ -38,8 +40,11 @@ public class UserServiceImpl implements UserService, UserDetailsService {
     }
 
     @Override
+    @Transactional(readOnly = true)
     public Optional<UserDto> getById(Long id) {
-        return Optional.empty();
+        Optional<User> user = userRepository.findById(id);
+        User entity = user.orElseThrow(()-> new ResourceNotFoundException("Entity not found"));
+        return Optional.of(new UserDto(entity));
     }
 
     @Override
