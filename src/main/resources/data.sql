@@ -18,7 +18,11 @@ INSERT INTO tb_course (name, img_Uri, img_Gray_Uri) values ( 'BootCamp HTML','NU
 
 INSERT INTO tb_offer(edition,start_Moment,end_Moment, course_id) values ( '1.0','2020-07-14T10:00:00','2021-07-14T10:00:00',1 );
 
-INSERT INTO tb_notification(texto,moment,read,route,user_id) values ( 'Obrigo(a) pelo curso','2020-07-14T10:00:00', true,'http://www.escola.com.br', 1);
+INSERT INTO tb_notification(texto,moment,read,route,user_id) values ( 'Primeiro feedback de tarefa: favor revisar','2020-07-14T10:00:00', true,'http://www.escola.com.br', 1);
+INSERT INTO tb_notification(texto,moment,read,route,user_id) values ( 'Segundo feedback: favor revisar','2020-07-14T10:00:00', true,'http://www.escola.com.br', 1);
+INSERT INTO tb_notification(texto,moment,read,route,user_id) values ( 'Terceiro feedback: favor revisar','2020-07-14T10:00:00', true,'http://www.escola.com.br', 1);
+INSERT INTO tb_notification(texto,moment,read,route,user_id) values ( 'Obrigo(a) pelo curso User 02','2020-07-14T10:00:00', true,'http://www.escola.com.br', 2);
+INSERT INTO tb_notification(texto,moment,read,route,user_id) values ( 'Obrigo(a) pelo curso User 03','2020-07-14T10:00:00', true,'http://www.escola.com.br', 3);
 
 INSERT INTO tb_resource(title,description,position,img_Uri,type,extemal_Link,offer_id) values ( 'Trilha HTML','Trilha principal do curso',1,'NULL',1,'NULL',1);
 INSERT INTO tb_resource(title,description,position,img_Uri,type,extemal_Link,offer_id) values ( 'Forum','Tire suas duvidas',2,'NULL',2,'NULL',1);
