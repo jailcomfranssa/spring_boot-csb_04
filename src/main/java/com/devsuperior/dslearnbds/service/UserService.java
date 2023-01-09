@@ -13,7 +13,7 @@ public interface UserService {
     List<UserDto> getAll();
     Optional<UserDto> getById(Long id);
     UserDto update(Long id, UserDto userDto);
-
+    UserDto findByEmail(String email);
     Page<UserDto> getPage(Integer page, Integer linesPerPage, String direction, String orderBy);
 
 
