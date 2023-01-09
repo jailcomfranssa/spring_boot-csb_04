@@ -10,23 +10,22 @@ public class UserDto implements Serializable {
     private Long id;
     private String nome;
     private String email;
-    private String password;
 
     public UserDto() {
     }
 
-    public UserDto(Long id, String nome, String email, String password) {
+    public UserDto(Long id, String nome, String email) {
         this.id = id;
         this.nome = nome;
         this.email = email;
-        this.password = password;
+
     }
 
     public UserDto(User entity){
-        this.id = entity.getId();
-        this.nome = entity.getNome();
-        this.email = entity.getEmail();
-        this.password = entity.getPassword();
+        id = entity.getId();
+        nome = entity.getNome();
+        email = entity.getEmail();
+
 
     }
 
@@ -54,11 +53,4 @@ public class UserDto implements Serializable {
         this.email = email;
     }
 
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
 }
