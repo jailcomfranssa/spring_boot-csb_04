@@ -1,10 +1,8 @@
 package com.devsuperior.dslearnbds.model.dto;
 
-import com.devsuperior.dslearnbds.model.entity.Deliver;
 import com.devsuperior.dslearnbds.model.enums.DeliverStatus;
 
 import java.io.Serializable;
-import java.time.Instant;
 
 public class DeliverDto implements Serializable {
     private static final long serialVersionUID = 1L;
@@ -45,38 +43,3 @@ public class DeliverDto implements Serializable {
         this.correctCount = correctCount;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

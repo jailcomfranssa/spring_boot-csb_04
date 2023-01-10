@@ -18,10 +18,8 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
 
 	@Autowired
 	private Environment env;
-	
 	@Autowired
 	private JwtTokenStore tokenStore;
-	
 	private static final String[] PUBLIC = { "/oauth/token", "/h2-console/**" };
 	
 	@Override

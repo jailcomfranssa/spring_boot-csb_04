@@ -18,15 +18,12 @@ public class UserDto implements Serializable {
         this.id = id;
         this.nome = nome;
         this.email = email;
-
     }
 
     public UserDto(User entity){
         id = entity.getId();
         nome = entity.getNome();
         email = entity.getEmail();
-
-
     }
 
     public Long getId() {

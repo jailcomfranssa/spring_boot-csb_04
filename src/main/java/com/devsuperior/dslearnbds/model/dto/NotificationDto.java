@@ -1,10 +1,7 @@
 package com.devsuperior.dslearnbds.model.dto;
 
 import com.devsuperior.dslearnbds.model.entity.Notification;
-import com.devsuperior.dslearnbds.model.entity.User;
 
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
 import java.io.Serializable;
 import java.time.Instant;
 
@@ -85,43 +82,3 @@ public class NotificationDto implements Serializable {
         this.userId = userId;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

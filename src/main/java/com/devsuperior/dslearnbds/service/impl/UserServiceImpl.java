@@ -72,8 +72,6 @@ public class UserServiceImpl implements UserService, UserDetailsService {
 //        return Optional.of(new UserDto(entity));
 //    }
 
-
-
     @Override
     public Page<UserDto> getPage(Integer page, Integer linesPerPage, String direction, String orderBy) {
         return null;
